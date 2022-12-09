@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- form ：表单标签 -->
+    <!-- type属性 -->
+    <h3>input标签常用type属性表</h3>
+    <img src="../img/type属性.png" alt="type属性" width="600px" height="400px">
+    <hr>
+    <form action="#">
+        用户名：<input type="text" name="username" id="" value="请输入名称" maxlength="6"><br>
+        密码：<input type="password" name="password" id="" maxlength="16" minlength="6"><br>
+        <!-- radio :单选 ；checked :默认选中 -->
+        <!-- radio单选按钮和checked多选按钮都必须有相同的name值 -->
+        性别：男<input type="radio" id="" name="sex" value="male" checked="checked">
+             女<input type="radio" id="" name="sex" value="female"><br>
+        <!-- checkbox ：多选 -->
+        你喜欢的水果:苹果<input type="checkbox" id="" name="fruit" value="apple">
+        香蕉<input type="checkbox" id="" name="fruit" value="banana">
+        橘子<input type="checkbox" id="" name="fruit" value="orange"><br>
+        <!-- 按钮 -->
+        <!-- submit ： 与button标签的submit属性一致，表示提交表单 -->
+        <input type="submit" value="免费注册">
+        <!-- reset ： 与button标签的reset属性一致，表示重置表单 -->
+        <input type="reset" value="重置">
+        <!-- button ： 定义按钮，常与js搭配使用 -->
+        <input type="button" value="获取验证码">
+        <hr>
+        <!-- file ：上传文件 -->
+        <input type="file" name="" id="">
+        <hr>
+        <!-- label ： 标签 -->
+        <!-- label ：点击单选框的文本也会选中选项 -->
+        <!-- label标签中for属性的值必须与该选项的id值相同 -->
+        性别：
+        <input type="radio" name="sex" id="man"><label for="man">男</label>
+        <input type="radio" name="sex" id="women"><label for="women">女</label>
+    </form>
+</body>
+</html>
