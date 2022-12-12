@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>容器标签</title>
+    <style>
+    .shadowbox {
+        width: 15em;
+        border: 1px solid #333;
+        box-shadow: 8px 8px 5px #444;
+        padding: 8px 12px;
+        background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    }
+    li span{
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <!-- 应该在没有其他合适的语义元素时才使用它。<span> 与 <div> 元素很相似，
+        但 <div> 是一个 块元素 而 <span> 则是 行内元素 (en-US). -->
+    <h4>容器标签</h4>
+    <!-- div ： 流内容容器，在不使用 CSS 的情况下，其对内容或布局没有任何影响 -->
+    <!-- div标签支持所有全局属性 -->
+    <!-- <div> 元素应当仅在没有任何其它语义元素（比如 <article> 或 <nav>）可用时使用。 -->
+    <h5>div标签</h5>
+    <div>
+        <p>这里可以是任何内容，比如 &lt;p&gt;,
+        &lt;table&gt;，一切由你作主！</p>
+    </div>
+    <hr>
+    <div class="shadowbox">
+        <p>Here's a very interesting note displayed in a
+        lovely shadowed box.</p>
+    </div>
+    <hr>
+    <!-- span ： 行内容器，并没有任何特殊语义 -->
+    <!-- 该元素仅包含 全局属性 (en-US) -->
+    <h5>span标签</h5>
+    <p><span>一些文字</span></p>
+    <hr>
+    <ul>
+        <li>
+            <span>
+            <a href="./05_超链接标签.html" target="_blank">See my portfolio</a>
+            </span>
+        </li>
+    </ul>
+</body>
+</html>
