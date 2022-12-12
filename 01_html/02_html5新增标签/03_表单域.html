@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单域</title>
+</head>
+<body>
+    <!-- 数据列表 -->
+    <!-- 没有样式，属于隐藏元素，display:none -->
+    <label for="word">hah</label><input type="text" list="word" />
+    <datalist id="word">
+        <option value="AA"></option>
+        <option value="BB">bb</option>
+        <!-- value值为空，内容不显示，写value值会输入value值，不写value输入的是后面的字 -->
+        <option value="CC">cc</option>
+        <option value="DD">dd</option>
+    </datalist>
+   <hr>
+   <!-- 电子邮箱 email -->
+   <label for="email">邮箱：</label><input type="email" name="" id="email"><hr>
+   <!-- url网址 url -->
+   <label for="url">url网址:</label><input type="url" name="" id="url"><hr>
+   <!-- 数字域 number -->
+   <!-- 可以输入e，e是自然常数 -->
+   <!-- step 步数 买次按钮可以加减几 -->
+   <!-- min 最小值 max 最大值 -->
+   <label for="number">数字（年龄）：</label><input type="number" name="age" id="number" step="3" min="1" max="99"><hr>
+   <!-- 搜索域 search -->
+   <label for="search">搜索：</label><input type="search" name="" id="search"><hr>
+   <!-- 手机号码 tel -->
+   <!-- pattern 格式/模式 新增属性 类似于脚本中的正则表达式 -->
+   <!-- [0-9]等价于\d都代表取值范围是数字0-9 -->
+   <!-- \d{11} 代表输进去的必须是11位数字 -->
+   <label for="tel">手机号：</label><input type="tel" name="" id="tel" pattern="\d{11}"><hr>
+   <!-- 身份证号码 （拓展）-->
+   身份证号码：<input type="text"  pattern="\d{17}(\d)|X|x">
+</body>
+</html>
