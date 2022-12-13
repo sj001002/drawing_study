@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>语义化标签布局</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>语义化标签布局</title>
 </head>
 <body>
-    <!-- header : 头部标签 -->
-    <!-- 展示介绍性信息 -->
-    <!-- 通常包含一组介绍性或是辅助导航的元素，例如标题、logo、搜索框等 -->
-    <!-- 不能放在footer标签、address标签或者另一个header标签内部 -->
-    <header>
-        <h3>语义化标签布局</h3>
-        <hr>
-        <h4>头部</h4>
-        <p><time pubdate datetime="2022-12-12">现在时间</time></p>
-    </header>
+  <!-- header : 头部标签 -->
+  <!-- 展示介绍性信息 -->
+  <!-- 通常包含一组介绍性或是辅助导航的元素，例如标题、logo、搜索框等 -->
+  <!-- 不能放在footer标签、address标签或者另一个header标签内部 -->
+  <header>
+    <h3>语义化标签布局</h3>
     <hr>
-    <!-- nav ： 导航链接，如菜单、目录索引等 -->
-    <!-- 用来放置一些热门的链接，不常用的链接通常放到footer标签里置于底部 -->
-    <nav>
-        <h4>导航</h4>
-        <ol>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JS</a></li>
-        </ol>
-    </nav>
-    <hr>
-    <!-- article : 内容标签，例如独立的文档、页面、应用、站点 -->
-    <!-- 可独立分配的或可复用的结构，如论坛帖子、新闻、博客等 -->
-    <h4>内容</h4>
+    <h4>头部</h4>
+    <p><time pubdate datetime="2022-12-12">现在时间</time></p>
+  </header>
+  <hr>
+  <!-- nav ： 导航链接，如菜单、目录索引等 -->
+  <!-- 用来放置一些热门的链接，不常用的链接通常放到footer标签里置于底部 -->
+  <nav>
+    <h4>导航</h4>
+    <ol>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JS</a></li>
+    </ol>
+  </nav>
+  <hr>
+  <!-- article : 内容标签，例如独立的文档、页面、应用、站点 -->
+  <!-- 可独立分配的或可复用的结构，如论坛帖子、新闻、博客等 -->
+  <h4>内容</h4>
+  <article>
+    <h5>Weather forecast for Beijing</h5>
     <article>
-        <h5>Weather forecast for Beijing</h5>
-        <article>
-            <h6>15 August 2021</h6>
-            <p>rain</p>
-        </article>
+      <h6>15 August 2021</h6>
+      <p>rain</p>
     </article>
-    <hr>
-    <!-- section : 定义文档某个区域 -->
-    <!-- 按主题讲内容分组，通常会有标题 -->
-    <!-- section标签通常出现在文档的大纲中 -->
-    <!-- 不要把section标签作为普通容器来使用，比如用于美化片段样式，此使用div标签更合适 -->
-    <!-- 如果元素里边是独立的整块内容，可以单发布，则更适合使用article标签 -->
-    <h4>定义文档某个区域</h4>
-   <section>
-    <h5>Introduction</h5>
-    <p>This is a bababbabababababbba!</p>
-   </section> 
-   <hr>
-   <!-- asider : 侧边栏，表示一个和页面内容几乎无关的内容 -->
-   <!-- 通常放在侧边栏，用于展示广告、tips、引用内容等 -->
-   <h4>侧边栏</h4>
-   <aside>
-    <h5>青训营</h5>
-    <p>青训营是字节跳动技术团队发起的技术系列。。。</p>
-   </aside>
-   <hr>
-   <!-- footer ： 脚注标签 -->
-   <!-- 表示最近一个章节的页脚 -->
-   <!-- 通常包含该章节作者、版权数据或者文档链接等信息 -->
-   <!-- footer内的元素不属于章节内容，不包含在大纲中 -->
-   <h4>页脚</h4>
-   <footer>
-    <p>Posted by : ByteFE</p>
-   </footer>
-   <img src="../img/页面布局例图.png" alt="页面布局例图">
+  </article>
+  <hr>
+  <!-- section : 定义文档某个区域 -->
+  <!-- 按主题讲内容分组，通常会有标题 -->
+  <!-- section标签通常出现在文档的大纲中 -->
+  <!-- 不要把section标签作为普通容器来使用，比如用于美化片段样式，此使用div标签更合适 -->
+  <!-- 如果元素里边是独立的整块内容，可以单发布，则更适合使用article标签 -->
+  <h4>定义文档某个区域</h4>
+  <section>
+  <h5>Introduction</h5>
+  <p>This is a bababbabababababbba!</p>
+  </section> 
+  <hr>
+  <!-- asider : 侧边栏，表示一个和页面内容几乎无关的内容 -->
+  <!-- 通常放在侧边栏，用于展示广告、tips、引用内容等 -->
+  <h4>侧边栏</h4>
+  <aside>
+  <h5>青训营</h5>
+  <p>青训营是字节跳动技术团队发起的技术系列。。。</p>
+  </aside>
+  <hr>
+  <!-- footer ： 脚注标签 -->
+  <!-- 表示最近一个章节的页脚 -->
+  <!-- 通常包含该章节作者、版权数据或者文档链接等信息 -->
+  <!-- footer内的元素不属于章节内容，不包含在大纲中 -->
+  <h4>页脚</h4>
+  <footer>
+  <p>Posted by : ByteFE</p>
+  </footer>
+  <img src="../img/页面布局例图.png" alt="页面布局例图">
 </body>
 </html>

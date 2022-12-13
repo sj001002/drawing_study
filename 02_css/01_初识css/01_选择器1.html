@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>选择器</title>
-    <style type="text/css">
-        /* 标签选择器 */
-        /* 作用：通过标签名，找到页面中所有这类标签，设置样式 */
-        /* 注意点：
-            标签选择器选择的是一类标签，而不是单独某一个
-            标签选择器无论嵌套关系有多深，都能找到对应的标签 */
-        a{
-            font-size: 20px;
-            background-color: bisque;
-            color: brown;
-        }
-        p{
-            background-color: rgb(78, 214, 137);
-            color: orangered;
-            width: 50px;
-        }
-        /* 类选择器 */
-        /* 作用：通过类名，找到页面中所有带有这个类名的标签，设置样式 */
-        /* 注意点：
-            所有标签上都有class属性，class属性的属性值成为类名
-            类名可以由数字、字母、下划线、中划线组成，但不能以数字或中划线开头
-            一个标签可以同时有多个类名，类名之前以空格隔开
-            类名可以重复，一个类选择器可以同时选中多个标签 */
-        .div1{
-            background-color: aqua;
-            height: 100px;
-            width: 100px;
-        }
-        .div2{
-            background-color: red;
-            height: 50px;
-            width: 50px;
-        }
-        /* ID选择器 */
-        /* 作用：通过id属性值，找到页面中带有这个id属性值的标签，设置样式 */
-        /* 注意点：
-            所有标签上都有id属性
-            id属性值类似于身份证号码，在一个页面中是唯一的，不可重复的
-            一个标签上只能有一个id属性值
-            一个id选择器只能选中一个标签 */
-        #idd{
-            color: deeppink;
-            background-color: slategray;
-            width: 50px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选择器</title>
+  <style type="text/css">
+    /* 标签选择器 */
+    /* 作用：通过标签名，找到页面中所有这类标签，设置样式 */
+    /* 注意点：
+        标签选择器选择的是一类标签，而不是单独某一个
+        标签选择器无论嵌套关系有多深，都能找到对应的标签 */
+    a{
+      font-size: 20px;
+      background-color: bisque;
+      color: brown;
+    }
+    p{
+      background-color: rgb(78, 214, 137);
+      color: orangered;
+      width: 50px;
+    }
+    /* 类选择器 */
+    /* 作用：通过类名，找到页面中所有带有这个类名的标签，设置样式 */
+    /* 注意点：
+        所有标签上都有class属性，class属性的属性值成为类名
+        类名可以由数字、字母、下划线、中划线组成，但不能以数字或中划线开头
+        一个标签可以同时有多个类名，类名之前以空格隔开
+        类名可以重复，一个类选择器可以同时选中多个标签 */
+    .div1{
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+    }
+    .div2{
+      background-color: red;
+      height: 50px;
+      width: 50px;
+    }
+    /* ID选择器 */
+    /* 作用：通过id属性值，找到页面中带有这个id属性值的标签，设置样式 */
+    /* 注意点：
+        所有标签上都有id属性
+        id属性值类似于身份证号码，在一个页面中是唯一的，不可重复的
+        一个标签上只能有一个id属性值
+        一个id选择器只能选中一个标签 */
+    #idd{
+      color: deeppink;
+      background-color: slategray;
+      width: 50px;
+    }
+  </style>
 </head>
 <body>
-    <h4>标签选择器</h4>
-    <a href="http://www.baidu.com" target="_blank" rel="noopener noreferrer">百度</a>
-    <p>阿巴巴爸爸啊吧吧吧</p>
-    <hr>
-    <h4>类选择器</h4>
-    <div class="div1">
-        <div class="div2">dsda</div>
-    </div>
-    <hr>
-    <h4>ID选择器</h4>
-    <h5 id="idd">你baba</h5>
+  <h4>标签选择器</h4>
+  <a href="http://www.baidu.com" target="_blank" rel="noopener noreferrer">百度</a>
+  <p>阿巴巴爸爸啊吧吧吧</p>
+  <hr>
+  <h4>类选择器</h4>
+  <div class="div1">
+    <div class="div2">dsda</div>
+  </div>
+  <hr>
+  <h4>ID选择器</h4>
+  <h5 id="idd">你baba</h5>
 </body>
 </html>
