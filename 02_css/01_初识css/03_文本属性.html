@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本属性</title>
+  <style>
+    /* 文本颜色 */
+    /* 
+    表示                  属性值
+    预定义的颜色值          red、green等
+    十六进制               #FF0000、#29DD794
+    RGB代码               rgb(255,0,0)或rgb(100%,0%,0%) */
+    div{
+      /* color: #fe6540; */
+      /* color: aqua; */
+      color:  rgb(98, 174, 98);
+    }
+    /* 对齐文本 */
+    /*  left 左对齐（默认）
+        center 居中对齐
+        right  右对齐 */
+    h3{
+      text-align: center;
+    }
+    /* 装饰文本 */
+    /*属性值          描述
+      none           默认，没有装饰线（最常用）
+      underline      下划线，链接a自带下划线（常用）
+      overline       上划线（几乎不用）
+      line-through   删除线（不常用） */
+      p{
+        /* text-decoration: underline; */
+        /* text-decoration: overline; */
+        /* text-decoration: line-through; */
+      }
+      /* 去除链接的下划线 */
+      a{
+        text-decoration: none;
+      }
+      /* 文本缩进 */
+      /* em 相对单位 */
+      .indent{
+        /* 文本第一行缩进 */
+        text-indent: 2em;
+      }
+      /* 行间距 */
+      p{
+        line-height: 60px;
+      }
+  </style>
+</head>
+<body>
+  <div>hahahahhahahahahah</div>
+  <h3>居中对齐</h3>
+  <p>小飞棍来咯</p>
+  <a href="#">baidu</a>
+  <p class="indent">梅西在腿部出现问题后，由于不敢充分地发力，因此他的拿球和摆脱的能力有了明显下降。
+    当时阿根廷主帅斯卡洛尼在场边很担心地询问梅西伤情，但是梅西的做法让人感动！</p>
+  <p class="indent">为了不拖累球队，梅西选择继续坚持下去同时不暴露自己的伤势，让队友给他脚下球，
+    去正式转型为布斯克茨那样的进攻转换节奏器，尤其是完成由守转攻的那一脚关键球，是在用另一种方式继续帮助球队拿到决赛入场券！</p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体属性</title>
+  <style>
+      /* 字体系列 */
+      /* 各种字体之间必须使用英文状态下的逗号隔开
+      一般情况下，如果有空格隔开的多个单词组成的字体 加引号
+      尽量使用系统默认自带字体，保证在任何用户的浏览器中都能正确显示
+      最常见的字体：body{font-family: 'Macrosoft YaHei','tahoma','Hiragino GB';} */
+      .family{
+        font-family: "微软雅黑";
+      }
+      .family-{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* 字体大小 */
+      .size{
+        font-size: 24px;
+      }
+      /* 字体粗细 */
+      /* 
+      属性值          描述
+      normal         默认值（不加粗）
+      bold           定义粗体（加粗）
+      100-900        400等同于normal，而700等同于bold
+      注意：数字后面不加单位 */
+      /* 学会让加粗标签（比如b、strong等）不加粗，或者其他标签加粗 */
+      .bold{
+        font-weight: 700;
+      }
+      b{
+        font-weight: 400;
+      }
+      /* 文字样式 */
+      /* 
+      属性值      作用
+      normal     默认值，浏览器会显示标准的字体样式 font-style：normal
+      italic     浏览器会显示斜体的字体样式 */
+      /* 注意：平时很少给问题加斜体，反而要给斜体标签（em、i）改为正体 */
+      em{
+        font-style: normal;
+      }
+      /* 字体复合属性 */
+      /* body{
+        font: font-style font-weight font-size/line-height font-family;
+      } */
+      /* 使用font属性，必须按照上面语法格式中的顺序书写，不能更换顺序，并且各个属性间以空格隔开 */
+      /* 不需要设置的属性可以省略（取默认值），但必须保留font-size和font- family属性，否则font属性将不起作用 */
+  </style>
+</head>
+<body>
+  <p class="family">我真的爱你，句句不轻易。</p>
+  <div class="family-">请你给我一滴泪的时间</div>
+  <p class="size">好好学习，天天向上</p>
+  <a href="#" class="bold">百度来咯</a><br>
+  <p><b>加粗百度</b></p>
+  <p><em>斜体百度</em></p>
+</body>
+</html>
