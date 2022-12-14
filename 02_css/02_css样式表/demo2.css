@@ -1,0 +1,28 @@
+body{
+  font-family: 'Microsoft';
+  font-size: 16px;
+  line-height: 30px;
+}
+h1{
+  font-weight: 400;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+.nav{
+  text-align: center;
+  color: #888888;
+  font-size: 12px;
+}
+.img{
+  text-align: center;
+}
+p{
+  text-indent: 2em;
+}
+.footer{
+  text-align: left;
+  font-size: 14px;
+  color: #888;
+}
