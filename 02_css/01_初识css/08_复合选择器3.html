@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复合选择器</title>
+  <style>
+  /* 伪类选择器 */
+  /* 用于向某些选择器添加特殊的效果，比如给链接添加特殊效果，或选择第1个，第n个元素 */
+  /* 书写最大的特点是用冒号（:）表示，比如 :hover 、 :first-child  */
+
+  /* 链接伪类选择器注意事项
+  1. 为了确保生效，请按照 LVHA 的循顺序声明 :link－:visited－:hover－:active。
+  2. 记忆法：love hate 或者 lv 包包 hao 。
+  3. 因为 a 链接在浏览器中具有默认样式，所以我们实际工作中都需要给链接单独指定样式。 */
+
+  
+  /* 未访问的链接 a:link */
+  a:link{
+    color: black;
+    text-decoration: none;
+  }
+  /* 访问过的链接 a:visited */
+  a:visited{
+    color: orange;
+  }
+  /* 鼠标经过的链接 a:hover */
+  a:hover{
+    color: chartreuse;
+  }
+  /* 鼠标正在按下（正在选中）没有弹起 a:active */
+  a:active{
+    color: darkmagenta;
+  }
+  </style>
+</head>
+<body>
+  <a href="#">小猪佩奇</a><br>
+  <a href="https://www.baidu.com">百度</a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>块元素</title>
+  <style>
+    div{
+      /* width: 200px; */
+      height: 200px;
+      background-color: aqua;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>块元素</h2>
+  <!-- 块元素 -->
+  <!-- 块级元素的特点：
+    ① 比较霸道，自己独占一行。
+    ② 高度，宽度、外边距以及内边距都可以控制。
+    ③ 宽度默认是容器（父级宽度）的100%。
+    ④ 是一个容器及盒子，里面可以放行内或者块级元素。 -->
+  <div>独占一行</div>瑟瑟发抖 
+  <!-- 注意：
+       文字类的元素内不能使用块级元素
+       <p> 标签主要用于存放文字，因此 <p> 里面不能放块级元素，特别是不能放<div>
+       同理， <h1>~<h6>等都是文字类块级标签，里面也不能放其他块级元素 -->
+</body>
+</html>
