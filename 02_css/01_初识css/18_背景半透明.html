@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>背景半透明</title>
+  <style>
+    /* 背景半透明 */
+    /* 语法   background: rgba(0, 0, 0, 0.3);*/
+    /* CSS3 为我们提供了背景颜色半透明的效果。
+       最后一个参数是 alpha 透明度，取值范围在 0~1之间
+       我们习惯把 0.3 的 0 省略掉，写为 background: rgba(0, 0, 0, .3);
+       注意：背景半透明是指盒子背景半透明，盒子里面的内容不受影响
+       CSS3 新增属性，是 IE9+ 版本浏览器才支持的
+       但是现在实际开发,我们不太关注兼容性写法了,可以放心使用 */ 
+    div{
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      font-size: 10px;
+      /* background-color: black; */
+      background:rgba(0, 0, 0, .6);
+    }
+  </style>
+</head>
+<body>
+  <div>我是你爹</div>
+  <hr>
+  <h3>背景属性总结</h3>
+  <img src="../03_img/10.png" alt="背景总结">
+</body>
+</html>

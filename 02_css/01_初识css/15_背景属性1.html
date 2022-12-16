@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>背景属性</title>
+  <style>
+    /* 背景颜色 */
+
+    /* 语法  background-color:颜色值;
+    一般情况下元素背景颜色默认值是 transparent（透明），我们也可以手动指定背景颜色为透明色。
+    background-color:transparent; */
+    div{
+      width: 200px;
+      height: 200px;
+      /* 系统默认为透明，手动设置也可以 */
+      /* background-color: transparent; */
+      /* background-color: #645f67; */
+    }
+    /* 背景图片 */
+    /* background-image 属性描述了元素的背景图像。 */
+    /* 实际开发常见于 logo 或者一些装饰性的小图片或者是超大的背景图片, 优点是非常便于控制位置. (精灵图也是一种运用场景) */
+    /* 语法  backgroud-image : none | url(url); */
+    /* 参数值       作用 */
+    /* none        五背景图（默认） */
+    /* url         使用绝对路径或者相对路径指定图像 */
+    .img{
+      width: 400px;
+      height: 400px;
+      background-image: url(../03_img/7.png);
+      background-color: bisque;
+      /* 背景图片不平铺 */
+      /* background-repeat: no-repeat; */
+      /* 默认为平铺 */
+      /* background-repeat: repeat; */
+      /* 沿x轴平铺 */
+      /* background-repeat: repeat-x; */
+      /* 沿y轴平铺 */
+      background-repeat: repeat-y;
+    }
+    /* 注意：背景图片后面的地址，千万不要忘记加 URL， 同时里面的路径不要加引号 */
+
+    /* 背景平铺 */
+    /* 语法   background-repeat: repeat | no-repeat | repeat-x |repeat-y*/
+    /* 参数值          作用 */
+    /* repeat          背景图像在纵向和横向上平铺 */
+    /* no-repeat       背景图像不平铺 */
+    /* repeat-x       背景图像在横向平铺 */
+    /* repeat-y       背景图像在纵向平铺 */
+  </style>
+</head>
+<body>
+  <div></div>
+  <div class="img"></div>
+</body>
+</html>

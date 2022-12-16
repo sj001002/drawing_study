@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>元素显示模式转换</title>
+  <style>
+    /* 特殊情况下，我们需要元素模式的转换，简单理解: 一个模式的元素需要另外一种模式的特性
+    比如想要增加链接 <a> 的触发范围。 */
+    /* 转换为块元素：display:block;
+       转换为行内元素：display:inline;
+       转换为行内块：display: inline-block; */
+    a{
+      width: 100px;
+      height: 50px;
+      background-color: aqua;
+      /* 转换为块元素 */
+      display: block;
+    }
+    a:link{
+      color: bisque;
+      text-decoration: none;
+    }
+    a:visited{
+      color: blueviolet;
+    }
+    a:hover{
+      color: chartreuse;
+      text-decoration: underline;
+    }
+    div{
+      width: 150px;
+      height: 100px;
+      background-color: purple;
+      /* 把块元素转换为行内元素 */
+      display: inline;
+    }
+    span{
+      width: 150px;
+      height: 50px;
+      background-color: beige;
+      /* 行内元素转化为行内块元素 */
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">行内元素转化为块元素</a>
+  <a href="#">行内元素转化为块元素</a>
+  <div>块元素转化为行内元素</div>
+  <div>块元素转化为行内元素</div>
+  <span>行内元素转化为行内块元素</span>
+  <span>行内元素转化为行内块元素</span>
+</body>
+</html>
