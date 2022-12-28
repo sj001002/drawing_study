@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单</title>
+  <style>
+    table{
+      border-collapse: collapse;
+      background-color: black;
+    }
+    th,td{
+      border: 1px solid black;
+      width: 50px;
+      height: 30px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <form action="#">
+    <table>
+      <caption>基本信息</caption>
+      <!-- 第一行 -->
+      <tr>
+        <th>姓名：</th>
+        <td>
+          <input type="text" id="name">
+        </td>
+        <th>性别：</th>
+        <td>
+          <input type="text" id="sex">
+        </td>
+        <td rowspan="4">
+          <img src="./pelissari.jpg" height="120px" width="100px">
+        </td>
+      </tr>
+      <!-- 第二行 -->
+      <tr>
+        <th>年龄：</th>
+        <td>
+          <input type="text" name="age">
+        </td>
+        <th>生日：</th>
+        <td>
+          <input type="date" name="time" >
+        </td>
+      </tr>
+      <!-- 第三行 -->
+      <tr>
+        <th>邮箱：</th>
+        <td>
+          <input type="email" name="email">
+        </td>
+        <th>电话：</th>
+        <td>
+          <input type="tel" name="tel">
+        </td>
+      </tr>
+      <!-- 第四行 -->
+      <tr>
+        <th>学历：</th>
+        <td>
+          <select name="edu">
+            <option value="A">本科</option>
+            <option value="B" selected="selected">专科</option>
+            <option value="C">硕士</option>
+            <option value="D">高中</option>
+          </select>
+        </td>
+        <th>学校：</th>
+        <td>
+          <input type="text" name="school">
+        </td>
+      </tr>
+      <!-- 第五行 -->
+      <tr>
+        <th>爱好：</th>
+        <td colspan="4">
+          <input type="checkbox" name="hobby" value="reading">看书
+          <input type="checkbox" name="hobby" value="drawing">画画
+          <input type="checkbox" name="hobby" value="sport">运动
+          <input type="checkbox" name="hobby" value="picture">摄影
+          <input type="checkbox" name="hobby" value="travel">旅行
+          <input type="checkbox" name="hobby" value="code">编程
+          <input type="checkbox" name="hobby" value="qt">其他
+        </td>
+      </tr>
+      <!-- 第六行 -->
+      <tr>
+        <td>教育背景</td>
+      </tr>
+      <!-- 第七行 -->
+      <tr>
+        <td colspan="5">
+          <textarea name="edu" cols="100" rows="4"></textarea>
+        </td>
+      </tr>
+      <!-- 第八行 -->
+      <tr>
+        <td>自我评价</td>
+      </tr>
+      <!-- 第九行 -->
+      <tr>
+        <td colspan="5">
+          <textarea name="edu" cols="100" rows="4"></textarea>
+        </td>
+      </tr>
+      <!-- 第十行 -->
+      <tr>
+        <td>
+          <input type="submit" value="提交">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

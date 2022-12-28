@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#">
+    姓名：<input type="text" name="name" autofocus><br>
+    学历：<select name="edu" id="list">
+      <datalist id="list">
+        <option value="A">研究生</option>
+        <option value="B">大学生</option>
+        <option value="C">高中生</option>
+        <option value="D">初中生</option>
+      </datalist>
+    </select><br>
+    电话：<input type="text" name="tel"
+    pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$"><br>
+    生日：<input type="date" name="born"><br>
+  </form>
+</body>
+</html>
