@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      绝对定位，能把元素精确地放在任意位置。position 属性为我们提供了 absolute 属性值来设置元素的相对属性。
+      position: absolute;
+    */
+    .box {
+        width: 100%;
+        margin-left: 180px;
+      }
+      .ad-l {
+        position: absolute;
+        left: 50px;
+        top: 150px;
+      }
+      .ad-r {
+        position: absolute;
+        right: 30px;
+        top: 150px;
+      }
+  </style>
+</head>
+<body>
+  <img src="ad-l.png" class="ad-l" />
+  <img src="ad-r.png" class="ad-r" />
+  <div class="box">
+    <img src="box.png" />
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      相对定位是该元素的位置相对于它原始的位置来计算的。
+      position: relative;
+    */
+
+    .box {
+        width: 100%;
+      }
+      .ad-l {
+        position: relative;
+
+        left: -40px;
+      }
+      .ad-r {
+        position: relative;
+
+        left: 100px;
+      }
+  </style>
+</head>
+<body>
+  <img src="ad-l.png" class="ad-l" />
+  <img src="ad-r.png" class="ad-r" />
+  <div class="box">
+    <img src="box.png" />
+  </div>
+</body>
+</html>
